@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": "A1",
+      "name": "tea",
+      "price": 2.0,
+      "currentStock": 10,
+      "maxStock": 10
+    },
+    {
+      "id": "A2",
+      "name": "coffee",
+      "price": 2.5,
+      "currentStock": 10,
+      "maxStock": 10
+    },
+    {
+      "id": "A3",
+      "name": "pop",
+      "price": 1.5,
+      "currentStock": 10,
+      "maxStock": 10
+    },
+    {
+      "id": "B1",
+      "name": "juice",
+      "price": 3.25,
+      "currentStock": 10,
+      "maxStock": 10
+    },
+    {
+      "id": "B2",
+      "name": "beer",
+      "price": 4.55,
+      "currentStock": 10,
+      "maxStock": 10
+    },
+    {
+      "id": "B3",
+      "name": "peanuts",
+      "price": 3.0,
+      "currentStock": 10,
+      "maxStock": 10
+    }
+  ],
+  "coins": [
+    {
+      "id": "nickel",
+      "value": 0.05,
+      "currentStock": 20,
+      "maxStock": 25
+    },
+    {
+      "id": "dime",
+      "value": 0.1,
+      "currentStock": 20,
+      "maxStock": 25
+    },
+    {
+      "id": "quarter",
+      "value": 0.25,
+      "currentStock": 100,
+      "maxStock": 125
+    },
+    {
+      "id": "loonie",
+      "value": 1.0,
+      "currentStock": 30,
+      "maxStock": 40
+    },
+    {
+      "id": "toonie",
+      "value": 2.0,
+      "currentStock": 20,
+      "maxStock": 30
+    }
+  ]
+}
