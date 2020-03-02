@@ -39,7 +39,7 @@
       "id": "B3",
       "name": "peanuts",
       "price": 3.0,
-      "currentStock": 10,
+      "currentStock": 1,
       "maxStock": 10
     }
   ],
@@ -47,7 +47,7 @@
     {
       "id": "nickel",
       "value": 0.05,
-      "currentStock": 20,
+      "currentStock": 0,
       "maxStock": 25
     },
     {
@@ -65,14 +65,14 @@
     {
       "id": "loonie",
       "value": 1.0,
-      "currentStock": 30,
-      "maxStock": 40
+      "currentStock": 40,
+      "maxStock": 50
     },
     {
       "id": "toonie",
       "value": 2.0,
-      "currentStock": 20,
-      "maxStock": 30
+      "currentStock": 40,
+      "maxStock": 50
     }
   ]
 }
