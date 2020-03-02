@@ -78,17 +78,22 @@ describe("vendingMachine", () => {
   });
   describe("when cash amount is equal to or greater than item price and an item has been dispensed", () => {
     it("should return the change amount as an array of coinIds", () => {
-      expect(vendingMachine.dispenseChange("B1", 6.5)).toEqual([
-        "toonie",
-        "loonie",
-        "quarter",
-        "quarter"
-      ]);
+      expect(vendingMachine.dispenseChange("B1", 6.5)).toEqual(["toonie", "loonie", "quarter"]);
     });
   });
   describe("when cash amount is equal to or greater than item price and an item has been dispensed", () => {
     it("should update the coins currentStock based on cash amount received after change has been dispensed", () => {
       expect(vendingMachine.updateCoinsCurrentStock("dime")).toEqual(21);
+    });
+  });
+  describe("when an item's current stock number is fewer than 2", () => {
+    it("should refill the current stock number to max stock number", () => {
+      expect(vendingMachine.refillItems("B3")).toEqual(10);
+    });
+  });
+  describe("when a coin type's current stock number is fewer than 20% of its max stock", () => {
+    it("should refill the current stock number to 80% of max stock", () => {
+      expect(vendingMachine.refillCoins("nickel")).toEqual(20);
     });
   });
 });
